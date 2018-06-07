@@ -10,7 +10,8 @@ public class LoginValidation {
 
 
 
-    public LoginValidation(SplashActivity splashActivity) {
+    public LoginValidation(SplashActivity splashActivity, LoginCallback callback) {
+        this.callback=callback;
     }
 
     public void init(){
