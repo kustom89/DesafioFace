@@ -1,11 +1,11 @@
 package com.desafiolatam.desafioface.views.login;
 
-public interface SessionsCallback {
+public interface SessionCallback {
 
     void requiredField();
     void mailFormat();
     void success();
-    void fialure();
+    void failure();
 
 
 }

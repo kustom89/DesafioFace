@@ -1,10 +1,12 @@
 package com.desafiolatam.desafioface.views.splash;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.desafiolatam.desafioface.R;
 import com.desafiolatam.desafioface.views.login.LoginActivity;
@@ -14,6 +16,7 @@ public class SplashActivity extends AppCompatActivity implements LoginCallback{
 
 
 
+    @SuppressLint("InlinedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,10 +38,12 @@ public class SplashActivity extends AppCompatActivity implements LoginCallback{
     @Override
     public void signed() {
 
+        Toast.makeText(this, "signed", Toast.LENGTH_SHORT).show();
+
     }
 
     @Override
-    public void singup() {
+    public void signup() {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

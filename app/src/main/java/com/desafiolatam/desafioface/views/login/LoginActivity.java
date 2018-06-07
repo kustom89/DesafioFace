@@ -1,8 +1,8 @@
 package com.desafiolatam.desafioface.views.login;
 
+import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,7 +11,7 @@ import android.widget.Toast;
 import com.desafiolatam.desafioface.R;
 
 
-public class LoginActivity extends AppCompatActivity implements SessionsCallback {
+public class LoginActivity extends AppCompatActivity implements SessionCallback {
 
     private TextInputLayout mailWrapper, passWraper;
     private EditText mailEt, passEt;
@@ -62,8 +62,6 @@ public class LoginActivity extends AppCompatActivity implements SessionsCallback
         restoreView();
         mailEt.setError("REQUERIDO");
         passEt.setError("REQUERIDO");
-
-
     }
 
     @Override
@@ -80,7 +78,7 @@ public class LoginActivity extends AppCompatActivity implements SessionsCallback
     }
 
     @Override
-    public void fialure() {
+    public void failure() {
         restoreView();
         Toast.makeText(this, "Mail o password incorrecto", Toast.LENGTH_SHORT).show();
 

@@ -10,9 +10,9 @@ import retrofit2.Response;
 
 public class Singin {
 
-    private SessionsCallback callback;
+    private SessionCallback callback;
 
-    public Singin(SessionsCallback callback){
+    public Singin(SessionCallback callback){
         this.callback=callback;
     }
 
@@ -34,13 +34,13 @@ public class Singin {
                             user.create();
                             callback.success();
                         }else{
-                            callback.fialure();
+                            callback.failure();
                         }
                     }
 
                     @Override
                     public void onFailure(Call<CurrentUser> call, Throwable t) {
-                        callback.fialure();
+                        callback.failure();
 
                     }
                 });

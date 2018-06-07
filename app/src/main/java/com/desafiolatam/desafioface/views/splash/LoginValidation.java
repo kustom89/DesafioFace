@@ -8,6 +8,8 @@ public class LoginValidation {
 
     private LoginCallback callback;
 
+
+
     public LoginValidation(SplashActivity splashActivity) {
     }
 
@@ -16,7 +18,7 @@ public class LoginValidation {
         if(currentUsers!=null&& currentUsers.size()>0){
             callback.signed();
         }else{
-            callback.singup();
+            callback.signup();
         }
 
     }
