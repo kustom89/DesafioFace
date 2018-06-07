@@ -1,6 +1,4 @@
-package com.desafiolatam.desafioface.networks;
-
-import android.app.VoiceInteractor;
+package com.desafiolatam.desafioface.networks.sessions;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

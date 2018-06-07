@@ -1,8 +1,8 @@
 package com.desafiolatam.desafioface.views.login;
 
 import com.desafiolatam.desafioface.models.CurrentUser;
-import com.desafiolatam.desafioface.networks.LoginInterceptor;
-import com.desafiolatam.desafioface.networks.Session;
+import com.desafiolatam.desafioface.networks.sessions.LoginInterceptor;
+import com.desafiolatam.desafioface.networks.sessions.Session;
 
 import retrofit2.Call;
 import retrofit2.Callback;

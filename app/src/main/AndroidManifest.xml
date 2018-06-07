@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.desafiolatam.desafioface">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name="com.orm.SugarApp"
@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="DATABASE"
-            android:value="desafio_Face.db" />
+            android:value="desafio_face.db" />
         <meta-data
             android:name="VERSION"
             android:value="2" />
@@ -41,7 +41,11 @@
         <activity
             android:name=".views.MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".background.ResentUserService"
+            android:exported="false"></service>
     </application>
 
 </manifest>

@@ -8,11 +8,11 @@ public class LoginValidation {
 
     private LoginCallback callback;
 
-
-
-    public LoginValidation(SplashActivity splashActivity, LoginCallback callback) {
+    public LoginValidation( LoginCallback callback) {
         this.callback=callback;
+
     }
+
 
     public void init(){
         List<CurrentUser> currentUsers= CurrentUser.listAll(CurrentUser.class);
