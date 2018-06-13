@@ -1,8 +1,6 @@
 package com.desafiolatam.desafioface.views.splash;
 
-import com.desafiolatam.desafioface.models.CurrentUser;
-
-import java.util.List;
+import com.desafiolatam.desafioface.data.CurrentUsersQueries;
 
 public class LoginValidation {
 
@@ -15,8 +13,8 @@ public class LoginValidation {
 
 
     public void init(){
-        List<CurrentUser> currentUsers= CurrentUser.listAll(CurrentUser.class);
-        if(currentUsers!=null&& currentUsers.size()>0){
+
+        if(new CurrentUsersQueries().isLogged()){
             callback.signed();
         }else{
             callback.signup();

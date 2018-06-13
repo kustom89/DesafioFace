@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.desafiolatam.desafioface">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:name="com.orm.SugarApp"
@@ -39,8 +39,7 @@
             android:label="@string/title_activity_login"
             android:theme="@style/LoginTheme" />
         <activity
-            android:name=".views.MainActivity"
-            android:label="@string/title_activity_main"
+            android:name=".views.main.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <service

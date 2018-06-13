@@ -7,8 +7,6 @@ public class CurrentUser extends SugarBase {
     public CurrentUser() {
     }
 
-
-
     public String getName() {
         return this.name;
     }
